@@ -10,6 +10,8 @@ app = FastAPI()
 def index():
     return {'data': 'blog list'}
 
+# coba
+
 
 @app.get('/blog')
 def blog(limit=10, published: bool = True, sort: Optional[str] = None):
